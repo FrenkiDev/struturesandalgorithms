@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><scriptPool>
+    <dataPool nameScript="nameScript">
+        <parametr nameParametr="nameParametr">
+            <value/>
+        </parametr>
+    </dataPool>
+<dataPool nameScript="DEP_5_1_Creat">
+    <parametr nameParametr="clientId">
+        <value>value_clientID_1</value>
+        <value>value_clientID_2</value>
+    </parametr>
+</dataPool>
+</scriptPool>
