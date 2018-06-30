@@ -1,26 +1,26 @@
 package dbexemple.entity;
 
 public class ImplProj {
-    private Long employeeID;
-    private Long projectID;
+    private Long employeeId;
+    private Long projectId;
 
     public ImplProj() {
     }
 
-    public Long getEmployeeID() {
-        return employeeID;
+    public Long getEmployeeId() {
+        return employeeId;
     }
 
-    public void setEmployeeID(Long employeeID) {
-        this.employeeID = employeeID;
+    public void setEmployeeId(Long employeeId) {
+        this.employeeId = employeeId;
     }
 
-    public Long getProjectID() {
-        return projectID;
+    public Long getProjectId() {
+        return projectId;
     }
 
-    public void setProjectID(Long projectID) {
-        this.projectID = projectID;
+    public void setProjectId(Long projectId) {
+        this.projectId = projectId;
     }
 
     @Override
@@ -30,24 +30,24 @@ public class ImplProj {
 
         ImplProj implProj = (ImplProj) o;
 
-        if (employeeID != null ? !employeeID.equals(implProj.employeeID) : implProj.employeeID != null) return false;
-        if (projectID != null ? !projectID.equals(implProj.projectID) : implProj.projectID != null) return false;
+        if (employeeId != null ? !employeeId.equals(implProj.employeeId) : implProj.employeeId != null) return false;
+        if (projectId != null ? !projectId.equals(implProj.projectId) : implProj.projectId != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        int result = employeeID != null ? employeeID.hashCode() : 0;
-        result = 31 * result + (projectID != null ? projectID.hashCode() : 0);
+        int result = employeeId != null ? employeeId.hashCode() : 0;
+        result = 31 * result + (projectId != null ? projectId.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
         return "ImplProj{" +
-                "employeeID=" + employeeID +
-                ", projectID=" + projectID +
+                "employeeId=" + employeeId +
+                ", projectId=" + projectId +
                 '}';
     }
 }

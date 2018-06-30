@@ -7,7 +7,7 @@ public class Employee {
     private String firstName;
     private String lastName;
     private Date birthDay;
-    private Long addressID;
+    private Long addressId;
 
     public Employee() {
     }
@@ -44,12 +44,12 @@ public class Employee {
         this.birthDay = birthDay;
     }
 
-    public Long getAddressID() {
-        return addressID;
+    public Long getAddressId() {
+        return addressId;
     }
 
-    public void setAddressID(Long addressID) {
-        this.addressID = addressID;
+    public void setAddressId(Long addressId) {
+        this.addressId = addressId;
     }
 
     @Override
@@ -59,7 +59,7 @@ public class Employee {
 
         Employee employee = (Employee) o;
 
-        if (addressID != null ? !addressID.equals(employee.addressID) : employee.addressID != null) return false;
+        if (addressId != null ? !addressId.equals(employee.addressId) : employee.addressId != null) return false;
         if (birthDay != null ? !birthDay.equals(employee.birthDay) : employee.birthDay != null) return false;
         if (firstName != null ? !firstName.equals(employee.firstName) : employee.firstName != null) return false;
         if (id != null ? !id.equals(employee.id) : employee.id != null) return false;
@@ -74,7 +74,7 @@ public class Employee {
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         result = 31 * result + (birthDay != null ? birthDay.hashCode() : 0);
-        result = 31 * result + (addressID != null ? addressID.hashCode() : 0);
+        result = 31 * result + (addressId != null ? addressId.hashCode() : 0);
         return result;
     }
 
@@ -85,7 +85,7 @@ public class Employee {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", birthDay=" + birthDay +
-                ", addressID=" + addressID +
+                ", addressId=" + addressId +
                 '}';
     }
 }

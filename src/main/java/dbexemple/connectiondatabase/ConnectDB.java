@@ -1,4 +1,6 @@
-package dbexemple;
+package dbexemple.connectiondatabase;
+
+import dbexemple.Logers;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -67,7 +69,7 @@ public abstract class ConnectDB {
             this.setUser(properties.getProperty("db_USER_" + nameDrivers));
             this.setPassword(properties.getProperty("db_PASSWORD_" + nameDrivers));
         } catch (IOException e) {
-            e.printStackTrace();
+            Logers.LOG_DB.error(String.format("Error reading parametrs to file: %s", path));
         }
     }
 

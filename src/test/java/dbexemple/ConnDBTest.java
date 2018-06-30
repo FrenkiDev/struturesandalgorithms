@@ -1,6 +1,7 @@
 package dbexemple;
 
 
+import dbexemple.connectiondatabase.ConnH2DB;
 import org.junit.After;
 import org.junit.Before;
 

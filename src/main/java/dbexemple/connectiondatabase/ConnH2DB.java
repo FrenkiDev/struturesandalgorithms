@@ -1,4 +1,4 @@
-package dbexemple;
+package dbexemple.connectiondatabase;
 
 public class ConnH2DB extends ConnectDB {
 
