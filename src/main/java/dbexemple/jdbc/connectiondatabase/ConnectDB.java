@@ -1,4 +1,4 @@
-package dbexemple.connectiondatabase;
+package dbexemple.jdbc.connectiondatabase;
 
 import dbexemple.Logers;
 

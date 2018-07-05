@@ -1,4 +1,4 @@
-package dbexemple.entity;
+package dbexemple.jdbc.entity;
 
 public class Project {
     private Long id;

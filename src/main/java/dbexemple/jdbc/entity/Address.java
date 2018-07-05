@@ -1,4 +1,4 @@
-package dbexemple.entity;
+package dbexemple.jdbc.entity;
 
 public class Address {
     private Long id;

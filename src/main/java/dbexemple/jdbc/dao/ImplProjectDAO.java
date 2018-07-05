@@ -1,12 +1,12 @@
-package dbexemple.dao;
+package dbexemple.jdbc.dao;
 
-import dbexemple.entity.ImplProj;
+import dbexemple.jdbc.entity.ImplProj;
 
 import java.util.List;
 
 public interface ImplProjectDAO {
     //create
-    void add(ImplProj implProj);
+    boolean add(ImplProj implProj);
 
     //read
     List<ImplProj> getAll();
@@ -14,8 +14,8 @@ public interface ImplProjectDAO {
     ImplProj getByEmpoloyeeIdAndProjectId(Long employeeId, Long projectId);
 
     //update
-    void update(ImplProj implProj);
+    boolean update(ImplProj implProj, ImplProj upImplProj);
 
     //delete
-    void remove(ImplProj implProj);
+    boolean remove(ImplProj implProj);
 }

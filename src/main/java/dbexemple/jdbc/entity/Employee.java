@@ -1,4 +1,4 @@
-package dbexemple.entity;
+package dbexemple.jdbc.entity;
 
 import java.sql.Date;
 
